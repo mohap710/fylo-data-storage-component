@@ -14,6 +14,169 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
+  min-height: 100dvh;
+  position: relative;
   font-family: "Raleway", sans-serif;
+  background-image: url("./images/bg-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--Pale-Blue);
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20vh 1.5rem;
+  gap: 1rem;
+}
+.card {
+  background-color: var(--Dark-Blue);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.card:nth-child(1) {
+  border-top-right-radius: 115px;
+  flex-grow: 0.2;
+}
+
+.logo {
+  padding-block: 1rem;
+}
+.icons {
+  display: flex;
+  gap: 1rem;
+  padding-block: 1rem;
+}
+.icon {
+  background-color: var(--Very-Dark-Blue);
+  padding: 0.8rem;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+.card:nth-child(2) {
+  position: relative;
+  flex-grow: 0.5;
+}
+
+@media (min-width: 800px) {
+  .card:nth-child(2) {
+    align-self: flex-end;
+  }
+}
+h1 {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+}
+.bar-container {
+  position: relative;
+}
+.bar {
+  position: relative;
+  background-color: var(--Very-Dark-Blue);
+  padding: 2px;
+  margin-block: 1rem;
+  border-radius: 10px;
+}
+.bar::before {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 12px;
+  border-radius: 10px;
+  background: linear-gradient(var(--gradient));
+}
+.bar::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  right: 25.5%;
+  top: 3px;
+}
+.bar-labels {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
+}
+.note {
+  width: 55%;
+  padding-block: 1rem;
+  color: var(--Very-Dark-Blue);
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: -20%;
+  left: 20%;
+}
+.note > b {
+  font-size: 2rem;
+  padding-right: 0.8rem;
+}
+sup {
+  color: var(--Grayish-Blue);
+  font-weight: 700;
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: var(--Very-Dark-Blue);
+  background-color: #fafafae0;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+}
+.attribution a {
+  font-weight: 600;
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+/* Large screen design */
+@media (min-width: 800px) {
+  html {
+    background-color: hsl(226 108% 10% / 1);
+  }
+  body {
+    overflow: hidden;
+    background-image: url("./images/bg-desktop.png");
+    background-position: bottom;
+    background-size: 100% 60%;
+  }
+  .card-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    text-align: start;
+    margin-block: 1rem;
+  }
+  .note {
+    width: 20%;
+    left: unset;
+    bottom: unset;
+    top: -15%;
+    right: 5%;
+  }
+  .note::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 30px;
+    right: 0;
+    border: 20px solid white;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+  }
 }

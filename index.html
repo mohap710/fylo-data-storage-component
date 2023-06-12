@@ -4,15 +4,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+    <link rel="stylesheet" href="style.css">
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
 
   <body>
-    <main>
+    <main class="card-wrapper">
       <div class="card">
         <img src="./images/logo.svg" alt="logo" class="logo">
         <div class="icons">
@@ -23,19 +21,20 @@
       </div>
       <div class="card">
         <h1>
-          You’ve used 815 GB of your storage
+          You’ve used <b>815 GB</b> of your storage
         </h1>
-        <div>
-          185 GB Left
+        <div class="note">
+          <b>185</b><sup>GB Left</sup>
         </div>
         <div class="bar-container">
           <div class="bar"></div>
-          <div class="min">0 GB</div>
-          <div class="max">1000 GB</div>
+          <div class="bar-labels">
+            <span>0 GB</span>
+            <span>1000 GB</span>
+          </div>
         </div>
       </div>
     </main>
-
 
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
