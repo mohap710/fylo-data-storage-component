@@ -20,22 +20,19 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Design](./screenshots/desktop.png)
-![Mobile Design](./screenshots/mobile.png)
+- [Desktop Design](./screenshots/desktop.png)
+- [Mobile Design](./screenshots/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
+- [Solution URL](https://github.com/mohap710/fylo-data-storage-component)
+- [Live Site URL](https://mohap710.github.io/fylo-data-storage-component)
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
 
 ## Author
